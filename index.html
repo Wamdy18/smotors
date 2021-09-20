@@ -5,6 +5,7 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<meta name="viewport" content="width=1300">
 	<title>S-motors katalog</title>
+	<link rel="stylesheet" href="lib/nouislider.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,12 +27,12 @@
 
 				<div class="ht-right">
 					<div class="ht-right-lk">
-						<img src="img/icons/icon-lk.png" alt="">
-						<a href="#">Личный кабинет</a>
+						<a href="#"> <img src="img/icons/icon-lk.png" alt=""> Личный кабинет</a>
 					</div>
 					<div class="ht-right-cart">
-						<img src="img/icons/icon-cart.png" alt="">
-						<a href="#">Корзина</a>
+						<a href="#"><img src="img/icons/icon-cart.png" alt="">
+						<span>2</span>
+						Корзина</a>
 					</div>
 				</div>
 			</div>	
@@ -80,12 +81,10 @@
 				</div>
 				<div class="header-bottom-r">
 					<div class="hb-right-excavator">
-						<img src="img/icons/icon-excavator-c.png" alt="">
-						<a href="#">Запчасти для спецтехники</a>
+						<a href="#"> <img src="img/icons/icon-excavator-c.png" alt=""> Запчасти для спецтехники</a>
 					</div>
 					<div class="hb-right-truck">
-						<img src="img/icons/icon-truck-c.png" alt="">
-						<a href="#">Запчасти для грузовиков</a>
+						<a href="#"><img src="img/icons/icon-truck-c.png" alt=""> Запчасти для грузовиков</a>
 					</div>
 				</div>
 			</div>
@@ -140,6 +139,23 @@
 						</div>
 						<div class="specifications-menu-pricefilter">
 							<span>Цена</span>
+							<!-- <br><br> -->
+							<div class="filters-price__slider" id="rangeSlider">
+								
+							</div>
+							<div class="filters-price__inputs">
+								<label >
+									<input type="number" min="0" max="20000" placeholder="1490" class="filters-price__input" id="inputMin">
+									<span class="filters-price__text">р</span>
+								</label>
+
+								<label >
+									<input type="number" min="0" max="20000" placeholder="14490" class="filters-price__input" id="inputMax">
+									<span class="filters-price__text">р</span>
+								</label>
+								
+								
+							</div>
 						</div>
 						<div class="specifications-menu-options">
 							<span>Характеристики</span>
@@ -192,7 +208,7 @@
 						<a href="#">Запчасти для грузовиков</a>
 						<a href="#">Сummins</a>
 						<a href="#">Catarpillar</a>
-						<a href="#">Показать еще <img src="img/icons/icon-arrow-down-circle-black.png" alt=""></a>
+						<a href="#"><span>Показать еще <img src="img/icons/icon-arrow-down-circle-black.png" alt=""></span></a>
 					</div>
 
 					<div class="sort-line">
@@ -433,6 +449,10 @@
 				<a href="#">Политика конфиденциальности</a>
 			</div>
 		</div>
+		<hr>
+			<p class="p-last-footer">Копирование информации с сайта разрешено только с письменного согласия администрации. <br> Все названия производителей, логотипы, символы, номера и описания используются только для справочных целей.</p>
 	</footer>
 </body>
+<script src="lib/nouislider.min.js"></script>
+<script src="script.js"></script>
 </html>
